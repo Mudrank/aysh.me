@@ -9,13 +9,25 @@ body{
     margin-right: 20%;
     margin-left: 20%;
     background-color: #eeeee6;
-    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:19px;'><text y='50%'>🌈</text></svg>") 16 0,auto; /*!emojicursor.app*/
   }
 .title { font-weight: 400; }
 .sub {margin-top: 2vh; font-weight: 500;}
 
 nav {margin-top: 5vh; margin-bottom: 0px;}
-.a {text-decoration: none; background-color: #dbe5ff; padding-left: 1px; margin-right: 1px; color:inherit; }
+.a {text-decoration: none; background-color: #dbe5ff; padding-left: 1px; margin-right: 1px; color:inherit;
+}
+footer {margin-top: 70vh; margin-bottom: 5px}
+
+.highlight {background-color: #dbe5ff; padding-left: 1px; margin-right: 1px; }
+.email {cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:19px;'><text y='50%'>📬</text></svg>") 16 0,auto; /*!emojicursor.app*/}
+.twitter {    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:19px;'><text y='50%'>🐦</text></svg>") 16 0,auto; /*!emojicursor.app*/
+}
+.mobile {display: none;}
+
+@media only screen and (max-width: 600px) {
+  .mobile {display: inline-block;}
+  body {margin-right: 10%; margin-left: 10%;}
+  .navl { margin-left: 5px; margin-right: 10px;;}
+}
 
 
-.highlight {background-color: #dbe5ff; padding-left: 1px; margin-right: 1px;}
