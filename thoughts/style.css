@@ -21,16 +21,8 @@ body {
   font-weight: 400;
 }
 
-.sub {
-  margin-top: 2vh;
-  font-weight: 500;
-}
-
-.back {
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:19px;'><text y='50%'>⏪</text></svg>")
-      16 0,
-    default;
-  /*!emojicursor.app*/
+.highlight {
+  text-decoration: underline;
 }
 
 nav {
@@ -38,46 +30,30 @@ nav {
   margin-bottom: 0px;
 }
 
-.a {
-  text-decoration: none;
-  background-color: #dbe5ff;
-  padding-left: 1px;
-  margin-right: 1px;
-  color: inherit;
-}
-
-footer {
-  margin-top: 70vh;
-  margin-bottom: 5px;
-}
-
-.highlight {
-  background-color: #dbe5ff;
-  padding-left: 1px;
-  margin-right: 1px;
-}
-
 a {
   text-decoration: none;
   color: inherit;
+  background-color: #dbe5ff;
+  padding-left: 1px;
+  margin-right: 1px;
 }
-
-.email {
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:19px;'><text y='50%'>📬</text></svg>")
-      16 0,
-    auto;
-  /*!emojicursor.app*/
-}
-
 .twitter {
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:19px;'><text y='50%'>🐦</text></svg>")
       16 0,
     auto;
   /*!emojicursor.app*/
+  background-color: inherit;
+  padding-left: 0px;
+  margin-right: 0px;
 }
-
-.mobile {
-  display: none;
+.back {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:19px;'><text y='50%'>⏪</text></svg>")
+      16 0,
+    default;
+  /*!emojicursor.app*/
+  background-color: inherit;
+  padding-left: 0px;
+  margin-right: 0px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -86,8 +62,8 @@ a {
   }
 
   .body {
-    margin-right: 10%;
-    margin-left: 10%;
+    margin-right: 5%;
+    margin-left: 5%;
   }
 
   .navl {
