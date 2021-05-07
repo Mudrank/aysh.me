@@ -49,6 +49,7 @@ nav {
 footer {
   margin-top: 70vh;
   margin-bottom: 5px;
+
 }
 
 .highlight {
@@ -84,7 +85,9 @@ a {
   .mobile {
     display: inline-block;
   }
-
+  footer {
+    display: none;
+  }
   .body {
     margin-right: 10%;
     margin-left: 10%;
