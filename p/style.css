@@ -1,0 +1,95 @@
+.body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "PT Sans", "Open Sans", "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  line-height: 1.4;
+  color: black;
+  -webkit-overflow-scrolling: touch;
+  font-weight: 600;
+  margin-right: 20%;
+  margin-left: 20%;
+  background-color: #eeeee6;
+}
+
+body {
+  margin: 0;
+  background-color: #eeeee6;
+
+}
+
+.title {
+  font-weight: 400;
+}
+
+.sub {
+  margin-top: 2vh;
+  font-weight: 500;
+}
+
+.back {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:19px;'><text y='50%'>⏪</text></svg>") 16 0, default;
+  /*!emojicursor.app*/
+}
+
+nav {
+  margin-top: 5vh;
+  margin-bottom: 0px;
+}
+
+.a {
+  text-decoration: none;
+  background-color: #dbe5ff;
+  padding-left: 1px;
+  margin-right: 1px;
+  color: inherit;
+}
+
+footer {
+  margin-top: 70vh;
+  margin-bottom: 5px
+}
+
+.highlight {
+  background-color: #dbe5ff;
+  padding-left: 1px;
+  margin-right: 1px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit
+}
+
+.email {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:19px;'><text y='50%'>📬</text></svg>") 16 0, auto;
+  /*!emojicursor.app*/
+}
+
+.twitter {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='32' height='38' viewport='0 0 100 100' style='fill:black;font-size:19px;'><text y='50%'>🐦</text></svg>") 16 0, auto;
+  /*!emojicursor.app*/
+}
+
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .mobile {
+    display: inline-block;
+  }
+
+  .body {
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+
+  .navl {
+    margin-left: 5px;
+    margin-right: 10px;
+    ;
+  }
+}
+
+.tag {
+  font-size: 25px
+}

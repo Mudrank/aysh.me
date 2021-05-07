@@ -2,7 +2,7 @@
 
 <body>
   <div id="body" class="body">
-    <link href="./style.css" rel="stylesheet">
+    <link href="./p/style.css" rel="stylesheet">
     <meta property="og:url" content="https://aysh.me" />
     <meta property="og:title" content="Ayush Pathak" />
     <meta property="og:description" content="Ayush Pathak's little place on the internet" />
@@ -13,66 +13,14 @@
     <meta name="twitter:title" content="Ayush Pathak">
     <meta name="twitter:description" content="Ayush Pathak's little place on the internet" />
     <meta name="twitter:image" content="https://aysh.me/" />
-    <script>
-      lol = Math.floor(Math.random() * 7);
-      cursor = ["⚡", "✨", "🦄", "🌈", "🍄", "🥐", "🛴"]
-      yo = cursor[lol]
-      console.log(yo)
-      document.getElementsByTagName('body')[0].style.cursor =
-        `url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='50' height='60' viewport='0 0 100 100' style='fill:black;font-size:30px;'><text y='50%'>${yo}</text></svg>") 16 0, default`
-      console.log(document.body.style)
-      var keyc = {
-        37: 'left',
-        38: 'up',
-        39: 'right',
-        40: 'down',
-        65: 'a',
-        66: 'b'
-      };
-      var konamiCode = ['up', 'up', 'down', 'down', 'left', 'right', 'left', 'right', 'b', 'a'];
-      var konamiCodePosition = 0;
-      document.addEventListener('keydown', function (e) {
-        var key = keyc[e.keyCode];
-        var requiredKey = konamiCode[konamiCodePosition];
-        if (key == requiredKey) {
-          konamiCodePosition++;
-          if (konamiCodePosition == konamiCode.length) {
-            activateCheats();
-            konamiCodePosition = 0;
-          }
-        } else {
-          konamiCodePosition = 0;
-        }
-      });
-
-      function activateCheats() {
-        document.getElementById("me").src = "me.png";
-        for (i = 0; i <= 360; i++) {
-          setTimeout("rotateit(" + i + ")", i);
-        }
-        void(0);
-      };
-
-      function rotateit(x) {
-        x = parseInt(x);
-        document.body.setAttribute('style', ' -moz-transform: rotate(' + x +
-          'deg); -moz-transform-origin: 50% 50%; -webkit-transform: rotate(' + x +
-          'deg); -webkit-transform-origin: 50% 50%; -o-transform: rotate(' + x +
-          'deg); -o-transform-origin:50% 50%; -ms-transform: rotate(' + x +
-          'deg); -ms-transform-origin: 50% 50%; transform: rotate(' + x + 'deg); transform-origin: 50% 50%;');
-      }
-    </script>
-    <nav><a style="text-decoration: none; color: black; " class="twitter"
-        href="https://twitter.com/ayshptk">@ayshptk</a><a style="text-decoration: none; color: black; margin-left:  5%;"
-        href="projects.html">projects→</a> <a href="thoughts.html"
-        style="text-decoration: none; color: black; margin-left: 10px;">thoughts→</a></nav>
+    <script src="./p/server.js"></script>
+    <nav><a style="text-decoration: none; color: black; " class="twitter" href="https://twitter.com/ayshptk">@ayshptk</a><a style="text-decoration: none; color: black; margin-left:  5%;" href="projects.html">projects→</a> <a href="thoughts.html" style="text-decoration: none; color: black; margin-left: 10px;">thoughts→</a></nav>
     <img id="me" src="me.webp" style="border-radius: 50%; height: 120px; margin-top: 7vh;; width:auto"><br>
     <h1 class="title">Hey, I'm <u>Ayush</u>.</h1>
     <h2 class="sub">I'm a high school student, and I build digital products for the web.</h2>
     <h3>I've been fascinated by the internet ever since the day I used it for the first time. I wish to contribute as
-      much as I can to keep the fascination alive for others. I'm currently exploring ways to make it possible, while
-      building interesting micro-projects and attending zoom classes. <br><br>My interests include digital communities,
-      internet revenue models, and design. Happy to talk about anything interesting at <a href="https://opene.ml/s?email=hey@aysh.me"
+      much as I can to keep the fascination alive for others. <br><br>I'm currently exploring ways to make it possible, while <!--helping developers build the next billion ideas at <a class="highlight" href="https://deta.sh">Deta</a>,-->building interesting micro-projects and attending zoom classes. <br><br>
+      My interests include digital communities, internet revenue models, and design. Happy to talk about anything interesting at <a href="https://opene.ml/s?email=hey@aysh.me"
         style="text-decoration: none; color:inherit" class="highlight email"> hey@aysh.me <span
           class="mobile highlight">📬</span></a> or DM me <a href="https://twitter.com/ayshptk"
         class="highlight twitter" style="text-decoration: none; color:inherit" target="_blank">@ayshptk <span
